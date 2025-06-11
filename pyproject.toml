@@ -1,0 +1,106 @@
+[project]
+name = "llm-semantic-book-recommender"
+version = "0.1.0"
+description = "LLM Semantic Book Recommender"
+requires-python = ">=3.12"
+dependencies = [
+    # Core ML/AI libraries
+    "chromadb>=0.5.0",
+    "transformers>=4.40.0",
+    "torch>=2.0.0",
+    "langchain>=0.3.0",
+    "langchain-chroma>=0.1.0",
+    "langchain-community>=0.3.0",
+    "langchain-core>=0.3.0",
+    "langchain-openai>=0.2.0",
+    "langchain-text-splitters>=0.3.0",
+    "langsmith>=0.2.0",
+    # Data science
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+    # Web framework
+    "gradio>=5.0.0",
+    "fastapi>=0.100.0",
+    "uvicorn>=0.20.0",
+    # Jupyter/Notebook
+    "jupyter>=1.0.0",
+    "jupyterlab>=4.0.0",
+    "ipykernel>=6.20.0",
+    "ipython>=8.0.0",
+    "ipywidgets>=8.0.0",
+    "notebook>=7.0.0",
+    # HTTP clients
+    "httpx>=0.25.0",
+    "requests>=2.28.0",
+    # File handling
+    "aiofiles>=23.0.0",
+    # Development tools
+    "ruff>=0.1.0",
+    # Other utilities
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.0.0",
+    "click>=8.0.0",
+    "rich>=13.0.0",
+    "tqdm>=4.60.0",
+    "PyYAML>=6.0.0",
+    "tiktoken>=0.5.0",
+    "openai>=1.0.0",
+    "kagglehub>=0.3.0",
+    # Additional dependencies that may be needed
+    "beautifulsoup4>=4.12.0",
+    "pillow>=10.0.0",
+    "psutil>=5.9.0",
+    "sqlalchemy>=2.0.0",
+    "tenacity>=8.0.0",
+    "tokenizers>=0.15.0",
+    "backoff>=2.0.0",
+    "packaging>=23.0.0",
+    "certifi>=2023.0.0",
+    "charset-normalizer>=3.0.0",
+    "idna>=3.4",
+    "urllib3>=2.0.0",
+    "attrs>=22.0.0",
+    "typing-extensions>=4.5.0",
+    "filelock>=3.12.0",
+    "fsspec>=2023.6.0",
+    "huggingface-hub>=0.20.0",
+    "regex>=2023.8.0",
+    "safetensors>=0.4.0",
+    "sympy>=1.12.0",
+    "networkx>=3.0.0",
+    "jinja2>=3.1.0",
+    "markupsafe>=2.1.0",
+    "protobuf>=4.21.0",
+    "grpcio>=1.60.0",
+    "pydub>=0.25.0",
+    "ffmpy>=0.3.0",
+    "websockets>=11.0.0",
+    "starlette>=0.35.0",
+    "anyio>=3.7.0",
+    "sniffio>=1.3.0",
+    "h11>=0.14.0",
+    "httpcore>=1.0.0",
+    "httptools>=0.6.0",
+    "polars>=1.30.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+include = [
+    "*.py",
+    "*.ipynb",
+    "*.md",
+    "*.txt",
+    "*.toml",
+    "*.jpg",
+    "*.png",
+    "data/**/*",
+    "models/**/*",
+    "static/**/*"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
