@@ -84,6 +84,7 @@ dependencies = [
     "httpcore>=1.0.0",
     "httptools>=0.6.0",
     "polars>=1.30.0",
+    "pyarrow>=20.0.0",
 ]
 
 [tool.hatch.build.targets.wheel]
